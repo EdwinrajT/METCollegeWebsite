@@ -62,8 +62,30 @@
 
         </nav>
     </aside>
-    <div style="position:relative">
-        <img src="./images/clgPhoto.jpg" style="width:100%" />
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="./images/homeSlide/img1.jpg" class="imageSlide">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/homeSlide/img2.jpg" class="imageSlide">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/homeSlide/img3.jpg" class="imageSlide">
+        </div>
+        <div class="mySlides fade">
+            <img src="./images/homeSlide/img4.jpg" class="imageSlide">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div style="text-align:center;position: absolute;bottom: 6px;width: 100%;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
     </div>
     <div class="slogan"><strong>" Education</strong> is the most powerful weapon which you can use to change the world
         <strong>"</strong>
@@ -132,12 +154,9 @@
             <img class="zoom" src="./images/gallery/3.jpg" onclick="showImage(this);">
             <img class="zoom" src="./images/gallery/4.jpg" onclick="showImage(this);">
             <img class="zoom" src="./images/gallery/5.jpg" onclick="showImage(this);">
-            <img class="zoom" src="./images/gallery/1.jpg" onclick="showImage(this);">
-            <img class="zoom" src="./images/gallery/2.jpg" onclick="showImage(this);">
-            <img class="zoom" src="./images/gallery/3.jpg" onclick="showImage(this);">
-            <img class="zoom" src="./images/gallery/4.jpg" onclick="showImage(this);">
-            <img class="zoom" src="./images/gallery/5.jpg" onclick="showImage(this);">
-
+            <img class="zoom" src="./images/gallery/6.jpg" onclick="showImage(this);">
+            <img class="zoom" src="./images/gallery/7.jpg" onclick="showImage(this);">
+            <img class="zoom" src="./images/gallery/8.jpg" onclick="showImage(this);">
 
         </div>
         <div id="myModal" class="modal">
@@ -149,41 +168,57 @@
     </div>
     <div class="falcility" style="padding: 1% 5vw 1%;position:relative">
         <h1 class="aboutSubMainHead">FACILITIES</h1>
-        <div style="">
-            <div class="facilitiesDiv">
-                <div>
-                    <img src="./images/gallery/1.jpg" />
-                    <h3 class="facilityHead">Library</h3>
-                </div>
-                <div>
-                    <img src="./images/gallery/1.jpg" />
-                    <h3 class="facilityHead">Lab</h3>
-                </div>
-                <div>
-                    <img src="./images/gallery/3.jpg" />
-                    <h3 class="facilityHead">Playground</h3>
-                </div>
-                <div>
-                    <img src="./images/gallery/1.jpg" />
-                    <h3 class="facilityHead">Library</h3>
-                </div>
-                <div>
-                    <img src="./images/gallery/1.jpg" />
-                    <h3 class="facilityHead">Cafeteria</h3>
-                </div>
-                <div>
-                    <img src="./images/gallery/1.jpg" />
-                    <h3 class="facilityHead">College Bus</h3>
-                </div>
-            </div>
 
+        <div class="grid1">
+            <div>
+                <img src="./images/gallery/1.jpg" />
+                <h3 class="facilityHead">Library</h3>
+            </div>
+            <div>
+                <img src="./images/gallery/1.jpg" />
+                <h3 class="facilityHead">Lab</h3>
+            </div>
+            <div>
+                <img src="./images/gallery/3.jpg" />
+                <h3 class="facilityHead">Playground</h3>
+            </div>
+            <div>
+                <img src="./images/gallery/1.jpg" />
+                <h3 class="facilityHead">Library</h3>
+            </div>
+            <div>
+                <img src="./images/gallery/1.jpg" />
+                <h3 class="facilityHead">Cafeteria</h3>
+            </div>
+            <div>
+                <img src="./images/gallery/1.jpg" />
+                <h3 class="facilityHead">College Bus</h3>
+            </div>
         </div>
-        <!-- <a class="prev1" style="top:55%;color: #3c3c3c;left:0" onclick="moveDivPlus(+31)">❮</a>
-        <a class="next1" style="top:55%;color: #3c3c3c;" onclick="moveDivPlus(-31)">❯</a> -->
+
     </div>
 
-    <div>
-
+    <div class="clgDetail">
+        <div>
+            <img src="./images/graduation-cap-solid.svg" style="width:30%"/>
+            <h1>20</h1>
+            <h3>COURSES</h3>
+        </div>
+        <div>
+            <img src="./images/users-solid.svg" style="width:30%"/>
+            <h1>10122</h1>
+            <h3>STUDENTS</h3>
+        </div>
+        <div>
+            <img src="./images/user-solid.svg" style="width:23%"/>
+            <h1>300</h1>
+            <h3>STAFF</h3>
+        </div>
+        <div>
+            <img src="./images/briefcase-solid.svg" style="width:24%"/>
+            <h1>60</h1>
+            <h3>FACULTIES WITH PH.D</h3>
+        </div>
     </div>
 
 </body>
